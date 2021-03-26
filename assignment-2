@@ -1,0 +1,73 @@
+# Data-structure
+#include<iostream>
+using namespace std;
+class list {
+	int size = 0;
+#define capacity 5
+	int list[capacity];
+	int top = -1;
+public:
+	int get(int x) {
+		if (size == 0) {
+			cout << "the list is empty"<<endl;
+			return 0;
+		}
+		else if (x < 0 || x >= size) {
+				cout << "you can not add iteam" << endl;
+				return list[size - 1];
+			}
+		else{
+			return list[x];
+		}
+	}
+	int pushback(int val) {
+		if (size == capacity) {
+			cout << "list is empty" << endl;
+		}
+		else {
+			top++;
+			return list[top]=val;
+		}
+
+	}
+	int size() {
+		return size;
+	}
+	int remove() {
+		if (size == 0) {
+			cout << "the list is empty" << endl;
+			return 0;
+		}
+		else {
+			while (size != 0) {
+				top--;
+				return 0;
+			}
+		}
+
+	}
+	int set(int x, int val) {
+		if (size == 0) {
+			cout << "the list is empty" << endl;
+			return 0;
+		}
+		
+		else {
+			list[x] = val;
+			return 0;
+		}
+	}
+
+};
+
+
+
+
+
+int main() {
+	
+
+	
+	return 0;
+
+}
