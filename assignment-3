@@ -1,0 +1,61 @@
+#include<iostream>
+using namespace std;
+class stack {
+	int size = 5;
+	int top = -1;
+	int arr[5];
+	
+public:
+	bool push(int val) {
+		if (top>=5) {
+			cout << "stack is full " << endl;
+			return false;
+		}
+		else {
+			top++;
+			arr[top] = val;
+			return true;
+		}
+	}
+	int pop() {
+
+		if (top < 0) {
+			cout << "stack is empty" << endl;
+			return 0;
+	   }
+		else {
+			int element = arr[top];
+			top--;
+			cout << "the element is poped" << endl;
+			return 1;
+		}
+
+	}
+	void display() {
+		if (top >= 0) {
+			cout << "Stack elements are:"<<endl;
+			for (int i = top; i >= 0; i--)
+				cout << arr[i] << " ";
+			cout << endl;
+		}
+		else
+			cout << "Stack is empty";
+	}
+	//int find_min() {
+	//	int element = stack.pop();
+	//	int min = element;
+	///	if(element>min)
+	//}
+
+};
+int main() {
+	stack stack;
+	stack.push(5);
+	stack.push(8);
+	stack.push(78);
+	stack.push(778);
+	stack.push(798);
+     stack.pop();
+	stack.display();
+
+}
