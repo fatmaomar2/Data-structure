@@ -7,8 +7,13 @@ public:
 };
 int main() {
 	Node* first = new Node();
+	Node*second=new Node();
 	first->data = 'A';
+	first->next=second;
+	second->data='B';
+	
 	cout << first->data << endl;
+   cout << first->next->data<< endl;
 
 
 	return 0;
