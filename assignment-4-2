@@ -79,7 +79,7 @@ int main() {
 	twentyThere->data = 23;
 	twentyThere->next = NULL;
 
-
+/////word is mummy
 
 
 	cout << first->data << endl;
