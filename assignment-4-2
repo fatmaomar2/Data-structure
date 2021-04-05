@@ -1,0 +1,90 @@
+#include<iostream>
+using namespace std;
+class Node {
+public:
+	int data;
+	Node* next;
+};
+int main() {
+	Node* first = new Node();
+	Node* second = new Node();
+	Node* third = new Node();
+	Node* fourth = new Node();
+	Node* fifth = new Node();
+	Node* six = new Node();
+	Node* seven = new Node();
+	Node* eigth = new Node();
+	Node* nine = new Node();
+	Node* ten = new Node();
+	Node* eleven = new Node();
+	Node* twelve = new Node();
+	Node* thirteen = new Node();
+	Node* fourteen = new Node();
+	Node* fifteen = new Node();
+	Node* sixteen = new Node();
+	Node* seventeen = new Node();
+	Node* eighteen = new Node();
+	Node* nineteen = new Node();
+	Node* twenty = new Node();
+	Node* twentyOne = new Node();
+	Node* twentyTwo = new Node();
+	Node* twentyThere = new Node();
+
+
+
+	first->data = 1;
+	first->next = second;
+	second->data = 2;
+	second->next = third;
+	third->data = 3;
+	third->next = fourth;
+	fourth->data = 4;
+	fourth->next = fifth;
+	fifth->data = 5;
+	fifth->next = NULL;
+	six->data = 6;
+	six->next = seven;
+	seven->data = 7;
+	seven->next = eigth;
+	eigth->data = 8;
+	eigth->next = nine;
+	nine->data = 9;
+	nine->next = NULL;
+	ten->data = 10;
+	ten->next = eleven;
+	eleven->data = 11;
+	eleven->next = twelve;
+	twelve->data = 12;
+	twelve->next = thirteen;
+	thirteen->data = 13;
+	thirteen->next = fourteen;
+	fourteen->data = 14;
+	fourteen->next = NULL;
+	fifteen->data = 15;
+	fifteen->next = sixteen;
+	sixteen->data = 16;
+	sixteen->next = seventeen;
+	seventeen->data = 17;
+	seventeen->next = eighteen;
+	eighteen->data = 18;
+	eighteen->next = nineteen;
+	nineteen->data = 19;
+	nineteen->next = NULL;
+	twenty->data = 20;
+	twenty->next = twentyOne;
+	twentyOne->data = 21;
+	twentyOne->next = twentyTwo;
+	twentyTwo->data = 22;
+	twentyTwo->next = twentyThere;
+	twentyThere->data = 23;
+	twentyThere->next = NULL;
+
+
+
+
+	cout << first->data << endl;
+	cout << first->next->data << endl;
+
+
+	return 0;
+}
